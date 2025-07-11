@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="/img/iconos/calculo.png" type="image/x-icon">
+    <script src="./script.js"></script>
+    <title>COMIDAS - CALCULA TU VIDA</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="/img/matematico.png" alt="matematico">
+        <div class="tit-prin">
+            <h1>Calculando la <br>Vida</h1>
+            <br>
+            <div id="contadorUsuarios">Visitante N°: </div>
+        </div>
+        <a href="">
+            <h3>Contactenos:</h3>
+            <img src="/public/img/iconos/correo.png" alt="contacto">
+        </a>
+    </header>
+
+    <hr>
+
+    <nav>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/public/comidas.html">Comidas</a></li>
+            <li><a href="/public/viajes.html">Viaje</a></li>
+            <li><a href="/public/dinero.html">Dinero</a></li>
+            <li><a href="/public/conversor.html">Conversor</a></li>
+            <li><a href="/public/fechas.html">Fechas</a></li>
+            <li><a href="/public/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+    <h2 class="subtitulo">COMIDAS</h2>
+    <div class="container-calculos">
+
+        <h2><img src="./img/iconos/cuchillo-y-tenedor.png" alt="icono tenedor"> Dividir cuenta de comida</h2>
+        <p> Divide la cuenta entre los comensales</p>
+        <br>
+        <div class="seccion">
+            <input type="number" id="totalCuenta" placeholder="Total de la cuenta ($)">
+            <input type="number" id="personasCuenta" placeholder="Cantidad de personas">
+            <button onclick="dividirCuenta()"><i class="fa-solid fa-calculator"></i> Calcular</button>
+            <div id="resultadoCuenta" class="resultado"></div>
+        </div>
+
+        <div class="historial">
+            <h2><img src="./img/iconos/reloj.png" alt="reloj">Historial de cálculos</h2>
+            <div id="historial"></div>
+            <button class="limpiar-btn" onclick="limpiarHistorial()">
+                <img src="./img/iconos/basura.png" alt="basura">Limpiar historial
+            </button>
+        </div>
+    </div>
+
+    </div>
+
+
+    <hr>
+    <footer>
+        © 2025 Fede
+    </footer>
+
+</body>
+
+</html>
