@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="/img/iconos/calculo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="shortcut icon" href="/static/img/iconos/calculo.png" type="image/x-icon">
     <script src="./script.js"></script>
     <title>CONTACTO - CALCULA TU VIDA</title>
 </head>
@@ -13,15 +13,15 @@
 <body>
 
     <header>
-        <img src="/img/matematico.png" alt="matematico">
+        <img src="/static/img/matematico.png" alt="matematico">
         <div class="tit-prin">
             <h1>Calculando la <br>Vida</h1>
             <br>
             <div id="contadorUsuarios">Visitante N°: </div>
         </div>
-        <a href="">
+        <a href="/static/contacto.html">
             <h3>Contactenos:</h3>
-            <img src="/public/img/iconos/correo.png" alt="contacto">
+            <img src="/static/img/iconos/correo.png" alt="contacto">
         </a>
     </header>
 
@@ -30,12 +30,12 @@
     <nav>
         <ul>
             <li><a href="/">Inicio</a></li>
-            <li><a href="/public/comidas.html">Comidas</a></li>
-            <li><a href="/public/viajes.html">Viaje</a></li>
-            <li><a href="/public/dinero.html">Dinero</a></li>
-            <li><a href="/public/conversor.html">Conversor</a></li>
-            <li><a href="/public/fechas.html">Fechas</a></li>
-            <li><a href="/public/contacto.html">Contacto</a></li>
+            <li><a href="/static/comidas.html">Comidas</a></li>
+            <li><a href="/static/viajes.html">Viaje</a></li>
+            <li><a href="/static/dinero.html">Dinero</a></li>
+            <li><a href="/static/conversor.html">Conversor</a></li>
+            <li><a href="/static/fechas.html">Fechas</a></li>
+            <li><a href="/static/contacto.html">Contacto</a></li>
         </ul>
     </nav>
 
@@ -48,13 +48,13 @@
             <input type="email" id="email" placeholder="Tu email">
             <textarea id="mensaje" placeholder="Escribí tu mensaje" rows="5"></textarea>
             <button onclick="enviarMensaje()">
-                <img src="/img/iconos/calculadora.png" alt="calculadora"> Enviar Mensaje
+                <img src="/static/img/iconos/calculadora.png" alt="calculadora"> Enviar Mensaje
             </button>
             <div id="respuestaContacto" class="resultado"></div>
         </div>
     </div>
 
-    <img class="contacto" src="/public/img/contacto.png" alt="contacto">
+    <img class="contacto" src="/static/img/contacto.png" alt="contacto">
     <hr>
     <footer>
         © 2025 Fede

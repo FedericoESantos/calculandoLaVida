@@ -5,8 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="/img/iconos/calculo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="shortcut icon" href="/static/img/iconos/calculo.png" type="image/x-icon">
     <script src="./script.js"></script>
     <title>CONVERSOR - CALCULA TU VIDA</title>
 </head>
@@ -14,15 +14,15 @@
 <body>
 
     <header>
-        <img src="/img/matematico.png" alt="matematico">
+        <img src="/static/img/matematico.png" alt="matematico">
         <div class="tit-prin">
             <h1>Calculando la <br>Vida</h1>
             <br>
             <div id="contadorUsuarios">Visitante N°: </div>
         </div>
-        <a href="">
+        <a href="/static/contacto.html">
             <h3>Contactenos:</h3>
-            <img src="/public/img/iconos/correo.png" alt="contacto">
+            <img src="/static/img/iconos/correo.png" alt="contacto">
         </a>
     </header>
 
@@ -31,12 +31,12 @@
     <nav>
         <ul>
             <li><a href="/">Inicio</a></li>
-            <li><a href="/public/comidas.html">Comidas</a></li>
-            <li><a href="/public/viajes.html">Viaje</a></li>
-            <li><a href="/public/dinero.html">Dinero</a></li>
-            <li><a href="/public/conversor.html">Conversor</a></li>
-            <li><a href="/public/fechas.html">Fechas</a></li>
-            <li><a href="/public/contacto.html">Contacto</a></li>
+            <li><a href="/static/comidas.html">Comidas</a></li>
+            <li><a href="/static/viajes.html">Viaje</a></li>
+            <li><a href="/static/dinero.html">Dinero</a></li>
+            <li><a href="/static/conversor.html">Conversor</a></li>
+            <li><a href="/static/fechas.html">Fechas</a></li>
+            <li><a href="/static/contacto.html">Contacto</a></li>
         </ul>
     </nav>
 
@@ -44,7 +44,7 @@
     <h2 class="subtitulo">CONVERSOR</h2>
     <div class="container-calculos">
 
-        <h2><img src="./img/iconos/conversor.png" alt="conversor"> Conversor de Unidades</h2>
+        <h2><img src="/static/img/iconos/conversor.png" alt="conversor"> Conversor de Unidades</h2>
         <p> Convierte: <br><strong>Km a Millas - Pesos Argentinos a Dolares - Pesos Uruguayos a Dolares - Pesos Argentinos a Pesos Uruguayos</strong> </p>
         <p>Los valores son estimativos</p>
         <div class="seccion">
@@ -58,13 +58,13 @@
             </select>
 
             <button onclick="convertirUnidad()">
-                <img src="./img/iconos/calculadora.png" alt="calculadora"> Convertir
+                <img src="/static/img/iconos/calculadora.png" alt="calculadora"> Convertir
             </button>
 
             <div id="resultadoConversion" class="resultado"></div>
         </div>
 
-        <h2><img src="./img/iconos/bascula.png" alt="báscula"> Calculadora de IMC</h2>
+        <h2><img src="/static/img/iconos/bascula.png" alt="báscula"> Calculadora de IMC</h2>
         <p>Calcula el Indice de Masa Corporal</p>
         <p>Los valores son estimativos</p>
         <div class="seccion">
@@ -72,7 +72,7 @@
             <input type="number" id="altura" placeholder="Altura en cm">
 
             <button onclick="calcularIMC()">
-                <img src="./img/iconos/calculadora.png" alt="calculadora"> Calcular IMC
+                <img src="/static/img/iconos/calculadora.png" alt="calculadora"> Calcular IMC
             </button>
 
             <div id="resultadoIMC" class="resultado"></div>
@@ -80,10 +80,10 @@
 
 
         <div class="historial">
-            <h2><img src="./img/iconos/reloj.png" alt="reloj">Historial de cálculos</h2>
+            <h2><img src="/static/img/iconos/reloj.png" alt="reloj">Historial de cálculos</h2>
             <div id="historial"></div>
             <button class="limpiar-btn" onclick="limpiarHistorial()">
-                <img src="./img/iconos/basura.png" alt="basura">Limpiar historial
+                <img src="/static/img/iconos/basura.png" alt="basura">Limpiar historial
             </button>
         </div>
     </div>

@@ -313,7 +313,7 @@ function enviarMensaje() {
             if (data.error) {
                 document.getElementById("respuestaContacto").innerText = "Hubo un error al enviar.";
             } else {
-                document.getElementById("respuestaContacto").innerText = "Mensaje enviado con éxito.";
+                document.getElementById("respuestaContacto").innerText = "Mensaje enviado con éxito.  A la brevedad te responderemos!";
                 // limpiar campos
                 document.getElementById("nombre").value = "";
                 document.getElementById("email").value = "";
@@ -325,6 +325,26 @@ function enviarMensaje() {
             document.getElementById("respuestaContacto").innerText = "No se pudo enviar.";
         });
 }
+
+function actualizarContadorVisitas() {
+    fetch("/contador")
+        .then(response => response.json())
+        .then(data => {
+            if (data.visitas) {
+                document.getElementById("contadorUsuarios").innerText = "Visitante N°: " + data.visitas;
+            } else {
+                document.getElementById("contadorUsuarios").innerText = "Visitante N°: ? (error)";
+            }
+        })
+        .catch(error => {
+            console.error("Error al obtener visitas:", error);
+            document.getElementById("contadorUsuarios").innerText = "Visitante N°: ? (error)";
+        });
+}
+
+// Llamar al cargar la página
+document.addEventListener("DOMContentLoaded", actualizarContadorVisitas);
+
 
 mostrarHistorial();
 document.addEventListener("DOMContentLoaded", mostrarHistorial);

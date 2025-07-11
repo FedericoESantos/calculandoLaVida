@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="shortcut icon" href="/static/img/iconos/calculo.png" type="image/x-icon">
+    <script src="/static/script.js"></script>
+    <title>VIAJES - CALCULA TU VIDA</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="/static/img/matematico.png" alt="matematico">
+        <div class="tit-prin">
+            <h1>Calculando la <br>Vida</h1>
+            <br>
+            <div id="contadorUsuarios">Visitante N°: </div>
+        </div>
+        <a href="/static/contacto.html">
+            <h3>Contactenos:</h3>
+            <img src="/static/img/iconos/correo.png" alt="contacto">
+        </a>
+    </header>
+
+    <hr>
+    
+    <nav>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/comidas">Comidas</a></li>
+            <li><a href="/viaje">Viaje</a></li>
+            <li><a href="/dinero">Dinero</a></li>
+            <li><a href="/conversor">Conversor</a></li>
+            <li><a href="/fechas">Fechas</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+    <h2 class="subtitulo">VIAJES</h2>
+    <div class="container-calculos">
+
+        <h2><img src="/static/img/iconos/auto.png" alt="auto">Calcular Gastos de Viaje</h2>
+        <p>Divide la cuenta entre los pasajeros de un viaje, los peajes y los km recorridos</p>
+        <div class="seccion">
+            <input type="number" id="km" placeholder="Kilómetros recorridos">
+            <input type="number" id="costoKm" placeholder="Costo de nafta por km ($)">
+            <input type="number" id="cantidadPeajes" placeholder="Cantidad de peajes">
+            <input type="number" id="costoPeaje" placeholder="Costo de cada peaje ($)">
+            <input type="number" id="personasViaje" placeholder="Cantidad de personas que viajan">
+            <label>
+                <input type="checkbox" id="idaVuelta">
+                Ida y vuelta
+            </label>
+            <button onclick="calcularViaje()"><img src="/static/img/iconos/gasolinera.png" alt="gasolinera"> Calcular</button>
+            <div id="resultadoViaje" class="resultado"></div>
+        </div>
+
+        <h2><img src="/static/img/iconos/gasolinera2.png" alt="consumo"> Consumo real de combustible</h2>
+        <p>Calcula el consumo real de combustible por km recorridos</p>
+        <div class="seccion">
+            <input type="number" id="kmRecorridos" placeholder="Kilómetros recorridos">
+            <input type="number" id="litrosCargados" placeholder="Litros cargados">
+            <button onclick="calcularConsumoReal()">
+                <img src="/static/img/iconos/gasolinera.png" alt="gasolinera"> Calcular
+            </button>
+            <div id="resultadoConsumo" class="resultado"></div>
+        </div>
+
+        <h2><img src="/static/img/iconos/gasolinera2.png" alt="combustible"> Comparar precios de combustible</h2>
+        <p>Comprara precios entre la nafta Super y la nafta Premium</p>
+        <div class="seccion">
+            <input type="number" id="precioSuper" placeholder="Precio por litro Nafta Super ($)">
+            <input type="number" id="precioPremium" placeholder="Precio por litro Nafta Premium ($)">
+            <input type="number" id="litrosCargar" placeholder="Litros a cargar (opcional)">
+            <button onclick="compararCombustibles()">
+                <img src="/static/img/iconos/gasolinera.png" alt="combustible"> Calcular
+            </button>
+            <div id="resultadoCombustible" class="resultado"></div>
+        </div>
+
+        <h2><img src="/static/img/iconos/velocimetro.png" alt="velocimetro"> Costo promedio por kilómetro</h2>
+        <p>Calcula el promedio de costo de combustible por km</p>
+        <div class="seccion">
+            <input type="number" id="totalGastoViaje" placeholder="Total gastado en el viaje ($)">
+            <input type="number" id="kmRecorridos" placeholder="Kilómetros recorridos">
+            <button onclick="calcularCostoPorKm()">
+                <img src="/static/img/iconos/gasolinera.png" alt="gasolinera"> Calcular
+            </button>
+            <div id="resultadoCostoKm" class="resultado"></div>
+        </div>
+
+        
+        <div class="historial">
+            <h2><img src="/static/img/iconos/reloj.png" alt="reloj">Historial de cálculos</h2>
+            <div id="historial"></div>
+            <button class="limpiar-btn" onclick="limpiarHistorial()">
+                <img src="/static/img/iconos/basura.png" alt="basura">Limpiar historial
+            </button>
+        </div>
+    </div>
+
+    </div>
+
+
+    <hr>
+    <footer>
+        © 2025 Fede
+    </footer>
+
+</body>
+
+</html>
