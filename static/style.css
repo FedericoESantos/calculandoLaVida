@@ -5,8 +5,8 @@
 }
 
 @font-face {
-  font-family: 'titulo';
-  src: url('./Cartoon.ttf');
+    font-family: 'titulo';
+    src: url('./Cartoon.ttf');
 }
 
 body {
@@ -18,7 +18,9 @@ body {
     background-color: rgb(223, 219, 214);
     text-align: center;
     align-items: center;
+    min-height: 100vh;
 }
+
 .subtitulo {
     font-family: 'titulo';
     font-size: 50px;
@@ -40,6 +42,7 @@ header {
     background-color: darkgoldenrod;
     flex-wrap: wrap;
 }
+
 header .tit-prin {
     display: flex;
     flex-direction: column;
@@ -47,7 +50,8 @@ header .tit-prin {
     align-items: center;
     text-align: center;
 }
-header .tit-prin div{
+
+header .tit-prin div {
     width: 60%;
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -55,26 +59,31 @@ header .tit-prin div{
     font-weight: bolder;
     border-style: groove;
 }
+
 header h1 {
     font-family: 'titulo';
     text-align: center;
     letter-spacing: 13px;
     color: rgb(185, 55, 16);
     text-shadow: 2px 2px 8px rgb(255, 255, 255);
-     -webkit-text-stroke: 0.03px black; 
+    -webkit-text-stroke: 0.03px black;
 }
+
 header img {
     width: 120px;
     filter: drop-shadow(2px 2px 10px black);
 }
+
 header a {
     text-decoration: none;
     color: #ffffff;
     text-shadow: 2px 2px 8px black;
 }
+
 header a img:hover {
     filter: drop-shadow(4px 4px 13px rgb(228, 11, 11));
 }
+
 header a img {
     width: 60px;
     filter: drop-shadow(2px 2px 10px black);
@@ -85,7 +94,8 @@ nav {
     background-color: #97898996;
     width: 100%;
 }
-nav ul{
+
+nav ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -96,9 +106,11 @@ nav ul{
     padding: 15px;
     flex-wrap: wrap;
 }
+
 nav ul li {
     list-style: none;
 }
+
 nav ul li a {
     display: inline-block;
     line-height: 1.5;
@@ -107,12 +119,14 @@ nav ul li a {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(69, 69, 218);
 }
+
 nav ul li a:hover {
     font-weight: bolder;
-  
+
     border-bottom: 2px solid rgb(69, 69, 218);
     padding-bottom: 2px;
 }
+
 /*--------------------- INDEX --------------------------*/
 .container-calculos .main {
     display: flex;
@@ -125,10 +139,12 @@ nav ul li a:hover {
     height: auto;
     gap: 15px;
 }
+
 .container-calculos .main img {
     height: 120px;
 }
-.container-calculos .main span h2{
+
+.container-calculos .main span h2 {
     font-family: 'titulo';
     font-size: 50px;
     text-shadow: 2px 2px 6px rgb(105, 96, 96);
@@ -137,6 +153,7 @@ nav ul li a:hover {
 /*--------------------- CONTENEDOR --------------------------*/
 .container-calculos {
     display: flex;
+    flex: 1;
     flex-direction: column;
     width: 100%;
     height: auto;
@@ -144,16 +161,19 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
 }
+
 .container-calculos .subtitulo {
     font-family: 'titulo';
     padding: 15px;
 }
+
 .container-calculos p {
     font-size: 19px;
     color: rgb(11, 44, 73);
     text-align: center;
     padding: 8px;
 }
+
 .container-calculos h2 {
     display: flex;
     color: rgb(11, 44, 73);
@@ -162,10 +182,12 @@ nav ul li a:hover {
     flex-wrap: wrap;
     gap: 15px;
 }
+
 .container-calculos h2 img {
     width: 30px;
     height: auto;
 }
+
 .container-calculos .seccion {
     display: flex;
     flex-direction: column;
@@ -173,17 +195,25 @@ nav ul li a:hover {
     width: 90%;
     border-radius: 5px;
 }
-.container-calculos .seccion button, .historial button {
+
+.container-calculos .seccion button,
+.historial button {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
 }
-.container-calculos .seccion button, input, .historial button, input {
+
+.container-calculos .seccion button,
+input,
+.historial button,
+input {
     height: 30px;
     border-radius: 5px;
 }
-.container-calculos .seccion button img, .historial img {
+
+.container-calculos .seccion button img,
+.historial img {
     width: 20px;
     height: auto;
 }
@@ -192,14 +222,17 @@ nav ul li a:hover {
     background-color: rgb(34, 126, 206);
     color: #ffffff;
 }
+
 .container-calculos .seccion button:hover {
     background-color: rgb(24, 93, 153);
     cursor: pointer;
 }
+
 .container-calculos .seccion .resultado {
     width: 100%;
     height: 35px;
 }
+
 .container-calculos .historial {
     display: flex;
     border-style: ridge;
@@ -210,19 +243,23 @@ nav ul li a:hover {
     padding: 5px;
     background-color: rgb(255, 252, 249);
 }
+
 .container-calculos .historial h2 img {
     width: 20px;
     height: 25px;
-        
+
 }
+
 .container-calculos .historial img {
     width: 20px;
     height: auto;
 }
+
 .container-calculos .historial button {
     background-color: rgb(173, 44, 44);
     color: #ffffff;
 }
+
 .container-calculos .historial button:hover {
     background-color: rgb(24, 93, 153);
     cursor: pointer;
@@ -230,11 +267,11 @@ nav ul li a:hover {
 
 /*--------------------- FOOTER --------------------------*/
 footer {
-  padding: 10px;
-  text-align: center;
-  background: #ccc;
-  flex-shrink: 0;
-  width: 100%;
+    padding: 10px;
+    text-align: center;
+    background: #ccc;
+    flex-shrink: 0;
+    width: 100%;
 }
 
 .contacto {
@@ -248,12 +285,13 @@ footer {
 
 
 @media (max-width: 444px) {
-  header {
-    flex-direction: column;
-  }
-  .container-calculos h2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    header {
+        flex-direction: column;
+    }
+
+    .container-calculos h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
